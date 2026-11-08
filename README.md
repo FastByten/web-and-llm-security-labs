@@ -40,9 +40,6 @@ Everything here is written in my own words, and only covers labs, practice platf
 - curl, Python, Git
 - Garak (LLM vulnerability scanner)
 
-## Scope and ethics
-
- **No secrets, credentials, or session tokens are committed to this repository.**
 
 ## Next steps
 
@@ -50,3 +47,7 @@ Everything here is written in my own words, and only covers labs, practice platf
 2. Learn enough Python to script HTTP requests and parse JSON.
 3. Return to Garak with a better understanding of what each probe and detector does, and investigate individual failures by hand.
 4. Work through the OWASP Top 10 for LLM Applications with small hands-on experiments.
+
+ 
+ 
+### _NO SECRETS, CREDENTIALS, OR SESSION TOKENS ARE COMMITTED TO THIS REPOSITORY!_ 
