@@ -6,7 +6,7 @@ Hands-on notes and write-ups from my self-taught path into application security,
 
 I'm based in Bulgaria and learning cybersecurity from scratch. My goal is a junior role in application security or penetration testing, then specializing in LLM security (prompt injection, agent and RAG risks).
 
-Everything here is written in my own words, and only covers labs, practice platforms, and systems I'm allowed to test.
+Everything here is written in my own words, and only covers labs, practice platforms, and systems I'm allowed to test. I only test systems I own or have explicit permission to test: PortSwigger Web Security Academy labs, my own virtual machines, and similar practice platforms.
 
 ## Progress
 
@@ -30,26 +30,8 @@ Everything here is written in my own words, and only covers labs, practice platf
 
 | # | Test | Tool | Write-up |
 |---|------|------|----------|
-| 1 | First prompt injection scan | Garak | [read](garak/scan-001/README.md) |
+| 1 | First prompt injection scan | Garak | [read](garak/experiments/01-prompt-injection/README.md) |
 
-## Notes
-
-Study notes I keep while learning, in my own words:
-
-- [Networking fundamentals](notes/networking-fundamentals.md)
-- [HTTP fundamentals](notes/http-fundamentals.md)
-
-## Repository structure
-
-```
-security-labs/
-├── README.md
-├── portswigger/
-│   └── access-control/
-├── garak/
-│   └── scan-001/
-└── notes/
-```
 
 ## Environment
 
@@ -60,7 +42,7 @@ security-labs/
 
 ## Scope and ethics
 
-I only test systems I own or have explicit permission to test: PortSwigger Web Security Academy labs, my own virtual machines, and similar practice platforms. No secrets, credentials, or session tokens are committed to this repository.
+ **No secrets, credentials, or session tokens are committed to this repository.**
 
 ## Next steps
 
