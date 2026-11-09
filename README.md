@@ -25,7 +25,6 @@ Everything here is written in my own words, and only covers labs, practice platf
 |---|-----|---------------------|----------|
 | 1 | Unprotected admin functionality | Broken access control | [read](portswigger/access-control/01-unprotected-admin-functionality.md) |
 | 2 | Unprotected admin functionality with unpredictable URL | Broken access control | [read](portswigger/access-control/02-unpredictable-admin-url.md) |
-|
 | 3 | User role controlled by request parameter | Broken acess control | [read](portswigger/access-control/03-user-role-controlled-by-request-parameter.md) | 
 
 ## LLM security
