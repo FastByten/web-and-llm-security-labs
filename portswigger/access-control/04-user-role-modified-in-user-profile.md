@@ -51,9 +51,9 @@ That the `/my-account/change-email` endpoint would only ever receive the one fie
 
 ## Root cause
 
-**Mass assignment.** The endpoint took the entire submitted object and saved it, including fields the client was never intended to be able to set. The UI only exposes an email field, but nothing on the server enforced that restriction, it trusted the shape of the request instead of validating which fields a user is allowed to modify.
+**Mass Assignment:** The server blindly accepted and saved every field sent in the request, instead of only updating what was allowed (like an email address). Because the server didn't restrict or validate the incoming data, an attacker could sneak in extra fields (like changing their own user role) through an ordinary profile update.
 
-This is a different mechanism from the previous lab in this series ("User role controlled by request parameter"), where the server read an existing client-held cookie value with no check at all. Here, the server has a real, server-side role, but a different endpoint let an attacker overwrite it through an unrelated feature.
+**How it differs from the last lab:** In the previous lab ("User role controlled by request parameter"), the app simply trusted a fake value sent in a client-side cookie. Here, the server actually has secure, server-side roles - but a careless endpoint allowed an attacker to overwrite that role through an unrelated feature.
 
 
 ## Fix
