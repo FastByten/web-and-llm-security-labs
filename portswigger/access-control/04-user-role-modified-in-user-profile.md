@@ -2,6 +2,7 @@
 
 **Topic:** Access control
 **Vulnerability class:** Broken access control (mass assignment)
+
 **Tools:** Burp Suite (Proxy, Repeater)
 
 ## Goal
