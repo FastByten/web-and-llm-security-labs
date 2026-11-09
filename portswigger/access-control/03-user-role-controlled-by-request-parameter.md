@@ -43,7 +43,3 @@ This is different from the first two access control labs in this series. Those h
 - "The client sent it" is never proof of anything the server should trust for authorization. Only server-held state is trustworthy.
 - Progression across the three access control labs so far:
 
-| | Lab 1 | Lab 2 | Lab 3 |
-|---|---|---|---|
-| What exposed/granted access | `robots.txt` | JS in page source | A client-editable cookie |
-| Root cause | No server-side access control | No server-side access control | Server-side check exists, but trusts attacker-controlled input |
