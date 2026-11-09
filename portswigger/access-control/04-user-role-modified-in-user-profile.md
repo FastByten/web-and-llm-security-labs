@@ -1,6 +1,5 @@
-# Lab: User role can be modified in user profile
+# Lab: User role can be modified in user profile (Portswigger)
 
-**Platform:** PortSwigger Web Security Academy
 **Topic:** Access control
 **Vulnerability class:** Broken access control (mass assignment)
 **Tools:** Burp Suite (Proxy, Repeater)
@@ -55,11 +54,6 @@ That the `/my-account/change-email` endpoint would only ever receive the one fie
 
 This is a different mechanism from the previous lab in this series ("User role controlled by request parameter"), where the server read an existing client-held cookie value with no check at all. Here, the server has a real, server-side role, but a different endpoint let an attacker overwrite it through an unrelated feature.
 
-| | Lab 3: role via cookie | Lab 4: role via mass assignment |
-|---|---|---|
-| Where the flaw lives | A cookie the client sends every request | A request body field the server shouldn't accept |
-| What the server trusts | A claim the client makes directly | Whatever fields happen to be in the submitted object |
-| Fix | Never read authorization from client input | Explicitly allow-list which fields an endpoint can update |
 
 ## Fix
 
