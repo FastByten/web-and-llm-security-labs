@@ -1,8 +1,8 @@
-# Lab: User role controlled by request parameter
+# Lab: User role controlled by request parameter (Portswigger)
 
-**Platform:** PortSwigger Web Security Academy
 **Topic:** Access control
 **Vulnerability class:** Broken access control (client-controlled authorization data)
+
 **Tools:** Burp Suite (Proxy, Repeater, browser dev tools)
 
 ## Goal
