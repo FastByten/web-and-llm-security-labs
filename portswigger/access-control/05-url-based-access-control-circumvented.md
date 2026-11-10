@@ -1,8 +1,8 @@
-# Lab: URL-based access control can be circumvented
+# Lab: URL-based access control can be circumvented (Portswigger)
 
-**Platform:** PortSwigger Web Security Academy
 **Topic:** Access control
 **Vulnerability class:** Broken access control (front-end/back-end routing mismatch)
+
 **Tools:** Burp Suite (Proxy, Repeater)
 
 ## Goal
@@ -44,12 +44,6 @@ That blocking a single, literal path string (`/admin`) at the front end was suff
 
 This is a different shape of bug than the earlier access control labs in this series. Those had either no check at all, or a check that read an attacker-controlled *value* (a cookie, a request-body field). This one has a real check, enforced correctly by the front end, undermined because the back end doesn't honor the same boundary the front end thinks it's enforcing.
 
-| | Root of the trust problem |
-|---|---|
-| Lab 1/2 | No access control check existed at all |
-| Lab 3 | Check existed, but read a client-controlled cookie |
-| Lab 4 | Check existed, but an unrelated endpoint let the client overwrite the trusted value directly |
-| Lab 5 (this one) | Check existed and was correct, but a *different layer* trusted a client-controlled header that let requests skip it entirely |
 
 ## Fix
 
